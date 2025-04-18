@@ -33,11 +33,12 @@ Quick Quiz: Do You Have a Growth Mindset?
 
 """)
 
-q1 = st.radio("1. When I face difficulty, I:", ["Give up", "Look for help and try again"]) 
-q2 = st.radio("2. Mistakes mean:", ["I'm not smart", "I can learn something"]) 
-q3 = st.radio("3. Success comes from:", ["Talent", "Hard work and learning"])
+q1 = st.radio("1. When I face difficulty, I:", ["Give up", "Look for help and try again"]) q2 = st.radio("2. Mistakes mean:", ["I'm not smart", "I can learn something"]) q3 = st.radio("3. Success comes from:", ["Talent", "Hard work and learning"])
 
-if st.button("Check My Mindset"): score = 0 if q1 == "Look for help and try again": score += 1 if q2 == "I can learn something": score += 1 if q3 == "Hard work and learning": score += 1
+if st.button("Check My Mindset"): score = 0 
+    if q1 == "Look for help and try again": score += 1 
+        if q2 == "I can learn something": score += 1 
+            if q3 == "Hard work and learning": score += 1
 
 st.subheader("Result:")
 if score == 3:
