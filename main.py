@@ -50,5 +50,6 @@ elif score == 2:
 else:
     st.warning("Try to focus on learning and persistence. You can grow!")
 
-st.markdown("---") st.caption("Created with Streamlit for the Growth Mindset Challenge")
+st.markdown("---")
+st.caption("Created with Streamlit for the Growth Mindset Challenge")
 
